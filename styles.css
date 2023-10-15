@@ -1,6 +1,7 @@
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+    box-sizing: border-box;
 }
 
 body {
@@ -15,7 +16,48 @@ h1 {
     font-size: 80px;
 }
 
-a {
+.h1Underline {
+    padding-bottom: 10px;
+    border-bottom: 5px solid;
+    width: 50%;
+    margin: 16px auto;
+}
+
+.recipeOptions {
+    border-radius: 20px;
+    display: inline-block;
+    background-color:snow;
+    padding: 20px;
+    margin: 12px;
+    width: auto;
+    transition: 100ms;
+}
+
+.recipeOptions p {
+    display: inline-block;
+    margin: 0;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+img {
+    border: 5px solid navy;
+    display: block;
+    margin-top: 30px;
+    width: 350px;
+    height: 350px;
+    transition: 100ms;
+}
+
+.recipeOptions:hover{
+    background-color: slateblue;
+    color: snow;
+    transition: 100ms;
+}
+
+.recipeOptions:hover > img {
+    color: snow;
+    transition: 100ms;
+    border: 5px solid snow;
 }
